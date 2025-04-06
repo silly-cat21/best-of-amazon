@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your personal blog featuring YouTube videos and Amazon product recommendations.">
+  <title>Your Blog - Recommended Products & YouTube Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .videos, .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .video, .product {
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Personal Blog</h1>
+    <p>Discover the best Amazon products and watch my latest YouTube videos!</p>
+  </header>
+
+  <div class="container">
+    <section class="videos">
+      <h2>Latest YouTube Videos</h2>
+      <!-- YouTube Video Embed Placeholder -->
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" height="315"></iframe>
+        <p>Video title or description</p>
+      </div>
+      <!-- Repeat the above block for more videos -->
+    </section>
+
+    <section class="products">
+      <h2>Recommended Amazon Products</h2>
+      <!-- Amazon Product Embed Placeholder -->
+      <div class="product">
+        <img src="PRODUCT_IMAGE_URL" alt="Product Name">
+        <p>Product Name</p>
+        <a href="AMAZON_PRODUCT_URL" target="_blank">Check it out on Amazon</a>
+      </div>
+      <!-- Repeat the above block for more products -->
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name - All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
